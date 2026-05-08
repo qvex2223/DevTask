@@ -26,22 +26,3 @@ green-api-test/
 ├── README.md
 └── .gitignore
 ```
-
-## Запуск
-
-```bash
-python -m http.server 8080
-```
-
-После запуска страница доступна по адресу:
-
-`http://localhost:8080`
-
-## Security notes
-
-- `ApiTokenInstance` is not hardcoded in the source code.
-- `ApiTokenInstance` is entered manually by the user on the page.
-- The token is not stored in `localStorage`, `sessionStorage` or cookies.
-- The token is not logged to the browser console.
-- The repository contains no real credentials.
-- `.env` and other secret files are excluded through `.gitignore`.
